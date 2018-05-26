@@ -210,6 +210,8 @@ body {
   background-color: #555555;
   opacity: .8;
 }
+
+/*
 .nav>li>a {
   color:white;
 }
@@ -218,6 +220,7 @@ body {
   border-radius:0px;
   background-color:transparent;
 }
+*/
 .header {
   border-bottom: 1px solid #314C8E;
 }
@@ -273,4 +276,8 @@ body {
 }
 .call-finish {
 	color:#aaaaaa;
+}
+
+.nav-tabs>li>a, .nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+  font-size: 10px;
 }
