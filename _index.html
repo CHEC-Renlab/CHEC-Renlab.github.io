@@ -22,93 +22,125 @@
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <style type="text/css">
+    @font-face {
+      font-family: 'SourceHanSerifSC-Bold';
+      src: url('./static/font/SourceHanSerifSC-Bold.otf') format('truetype');
+    }
+
+    .custom-font-C-title {
+      font-family: 'SourceHanSerifSC-Bold';
+    }
+
+    @font-face {
+      font-family: 'SourceHanSerif-Light';
+      src: url('./static/font/SourceHanSerif-Light.ttc') format('truetype');
+    }
+
+    .custom-font-C-txt {
+      font-family: 'SourceHanSerif-Light';
+    }
+
+    @font-face {
+      font-family: 'airstrikecond-outline';
+      src: url('./static/font/airstrikeout.ttf') format('truetype');
+    }
+
+    .custom-font-outline {
+      font-family: 'airstrikecond-outline';
+      font-size: 40px;
+    }
+  </style>
+
 </head>
 
 <body>
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="gradient-y-gray position-relative z-index-2 overflow-hidden">
-      <div class="container space-top-2 space-top-lg-2 position-relative">
+    
+    <div class="gradient-y-gray position-relative z-index-2 overflow-hidden" style="background-image:linear-gradient(to bottom right,rgba(192,203,221,0.6) 0,rgba(129,146,176,1) 100%);">
+      <div id="particles-js" class="position-absolute w-100 h-100" style="z-index:-1;"></div>
+
+      <!-- style="background-image: url('./static/images/background/abstract-shapes-21.svg'); background-size: cover;"  -->
+      <div class="container space-top-2 space-top-lg-2">
         <div class="row justify-content-lg-between mb-7">
           <div class="col-md-7 col-lg-7">
             <!-- Info -->
             <div class="mb-2">
-              <h1>Xiangshi Ren</h1>
-              <p>Professor, School of Information, Kochi University of Technology</p>
+              <h1 class="custom-font-C-title">任向实 Xiangshi Ren</h1>
+              <h4 class="custom-font-C-txt">Professor, School of Information, Kochi University of Technology</h4>
               <!-- Nav Link -->
-        <ul class="nav nav-sm nav-x-0 flex-column">
-          <li class="nav-item">
-            <a class="nav-link media" href="#">
-              <span class="media">
-                <span class="fas fa-envelope mt-1 mr-2"></span>
-                <span class="media-body">
-                  ren.xiangshi@kochi-tech.ac.jp
-                </span>
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link media" href="#">
-              <span class="media">
-                <span class="fas fa-phone-alt mt-1 mr-2"></span>
-                <span class="media-body">
-                  +81-887-57-2209 (Direct) 
-                </span>
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link media" href="#">
-              <span class="media">
-                <span class="fas fa-location-arrow mt-1 mr-2"></span>
-                <span class="media-body">
-                  A409, Kochi University of Technology, Miyanokuchi 185, Tosayamada-Cho Kami-shi, Kochi, Japan 782-8502
-                </span>
-              </span>
-            </a>
-          </li>
-        </ul>
-        <!-- End Nav Link -->
+              <ul class="nav nav-sm nav-x-0 flex-column">
+                <li class="nav-item">
+                  <a class="nav-link media" href="#">
+                    <span class="media">
+                      <span class="fas fa-envelope mt-1 mr-2"></span>
+                      <span class="media-body">
+                        ren.xiangshi@kochi-tech.ac.jp
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link media" href="#">
+                    <span class="media">
+                      <span class="fas fa-phone-alt mt-1 mr-2"></span>
+                      <span class="media-body">
+                        +81-887-57-2209 (Direct)
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link media" href="#">
+                    <span class="media">
+                      <span class="fas fa-location-arrow mt-1 mr-2"></span>
+                      <span class="media-body">
+                        A409, Kochi University of Technology, Miyanokuchi 185, Tosayamada-Cho Kami-shi, Kochi, Japan
+                        782-8502
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Nav Link -->
             </div>
-            <a class="btn btn-primary btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2 mt-3"
-                href="static/Xiangshi-REN-CV.pdf">Full CV <i class="fas fa-file-download"></i></a>
-              <a class="btn btn-indigo btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2 mt-3"
-                href="http://xrenlab.com/projects">Projects <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                <hr>   
-                <!-- Clients -->
-        <div class="row justify-content-between text-center z-index-2">
-          <div class="col-4 col-lg-4 mb-5 mb-lg-0">
-            <div class="mx-0">
-              <a href="http://xrenlab.com">
-                <img class="mx-auto"
-                  src="./static/images/logo/CHEC.svg" alt="Image Description">
-              </a>
-            </div>
-          </div>
-            <div class="col-4 col-lg-4 mb-5 mb-lg-0">
-              <div class="mx-0 ml-3">
-                <a href="http://www.kochi-tech.ac.jp">
-                  <img class=" mx-auto" 
-                    src="./static/images/logo/kut.svg" alt="Image Description">
-                </a>
+            <a class="btn btn-outline-dark btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2"
+              href="static/Xiangshi-REN-CV.pdf" target="_blank">Full CV <i class="far fa-arrow-alt-circle-down"></i></a>
+            <hr style="border-top-color: #677788">
+            <!-- Clients -->
+            <div class="row justify-content-between text-center z-index-3">
+              <div class="col-4 col-lg-4 mb-5 mb-lg-0">
+                <div class="mx-0">
+                  <a href="http://xrenlab.com">
+                    <img class="mx-auto" src="./static/images/logo/CHEC.svg" alt="Image Description" target="_blank">
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-4 col-lg-4 mb-5 mb-lg-0">
-              <div class="mx-0 ml-n6 mt-n1">
-                <a href="http://www.icachi.org/">
-                  <img class="mx-auto" style="width:60%;"
-                    src="./static/images/logo/icachi-logo.svg" alt="Image Description">
-                </a>
+              <div class="col-4 col-lg-4 mb-5 mb-lg-0">
+                <div class="mx-0 ml-3">
+                  <a href="http://www.kochi-tech.ac.jp">
+                    <img class=" mx-auto" src="./static/images/logo/kut.svg" alt="Image Description" target="_blank">
+                  </a>
+                </div>
               </div>
+              <div class="col-4 col-lg-4 mb-5 mb-lg-0">
+                <div class="mx-0 ml-n6 mt-n1">
+                  <a href="http://www.icachi.org/">
+                    <img class="mx-auto" style="width:60%;" src="./static/images/logo/icachi-logo.svg"
+                      alt="Image Description" target="_blank">
+                  </a>
+                </div>
+              </div>
+              <!-- End Clients -->
             </div>
-          <!-- End Clients -->
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <!-- <p class="small">Start free trial. * No credit card required.</p> -->
             <!-- End Info -->
           </div>
@@ -122,23 +154,21 @@
           </div>
         </div>
 
-        
 
         <!-- SVG Shapes -->
-        <figure class="position-absolute z-index-n1" style="top: -35rem; left: 50rem; width: 62rem; height: 62rem;">
+        <!-- <figure class="position-absolute z-index-n1" style="top: -35rem; left: 50rem; width: 62rem; height: 62rem;">
           <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
             <circle fill="rgba(30,32,34,.3)" opacity=".7" cx="130" cy="130" r="130" />
           </svg>
-        </figure>
-        <figure class="position-absolute z-index-n1" style="top: 15rem; left: 70rem; width: 20rem; height: 20rem;">
+        </figure> -->
+        <!-- <figure class="position-absolute z-index-n1" style="top: 15rem; left: 70rem; width: 20rem; height: 20rem;">
           <img class="img-fluid" src="./assets/svg/components/circled-stripe.svg" alt="Image Description">
-        </figure>
+        </figure> -->
         <!-- <figure class="position-absolute z-index-n1" style="bottom: 7rem; left: -3rem; width: 15rem; height: 15rem;">
           <img class="img-fluid" src="./assets/svg/components/dots-3.svg" alt="Image Description">
         </figure> -->
         <!-- End SVG Shapes -->
       </div>
-
       <!-- SVG Bottom Shape -->
       <figure class="position-absolute right-0 bottom-0 left-0">
         <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
@@ -212,17 +242,17 @@
                     <div class="tab-pane fade show active" id="pills-one-code-features" role="tabpanel"
                       aria-labelledby="pills-one-code-features-tab">
                       <!-- Info -->
-                      <h3 class="mb-4">Xiangshi Ren</h3>
+                      <h1 class="mb-4">Xiangshi Ren</h1>
 
                       <p class="text-justify">Xiangshi Ren is a lifetime tenured professor in the School of
                         Information
                         and founding director of the Center for Human-Engaged Computing (<a href="http://xrenlab.com/"
-                            target="_blank">CHEC</a>)
+                          target="_blank">CHEC</a>)
                         at <a href="http://www.kochi-tech.ac.jp/" target="_blank">Kochi
-                            University of Technology</a>. He is founding president and honorary lifetime
+                          University of Technology</a>. He is founding president and honorary lifetime
                         president
-                        of the International Chinese Association of Computer Human Interaction (<a href="http://icachi.org/"
-                            target="_blank">ICACHI</a>).
+                        of the International Chinese Association of Computer Human Interaction (<a
+                          href="http://icachi.org/" target="_blank">ICACHI</a>).
                         He
                         has been named as one of the Asian Human-Computer Interaction Heroes in ACM CHI
                         2015. He was a visiting professor at the University of Toronto, visiting faculty
@@ -230,9 +260,9 @@
                         universities in China. Currently he is chair professor of Jilin University, adjunct
                         professor of Beijing Normal University. He is a Senior Member of the ACM, and a
                         Senior Member of the IEEE.
-                    </p>
+                      </p>
 
-                    <p class="text-justify">Prof. Ren has been working on fundamental studies in the field
+                      <p class="text-justify">Prof. Ren has been working on fundamental studies in the field
                         of human-computer Interaction (HCI) for over twenty-five years. His research
                         interests include all aspects of human-computer interaction, particularly human
                         performance models, pen-based interaction, multi-touch interaction, eye-based
@@ -259,13 +289,14 @@
                           flagship conference papers such as ACM CHI, UIST, ISS, SIGGRAPH. Fourteen Ph.D.
                           students who obtained their Ph.D. degrees and five postdoctoral fellowships have
                           been supervised under Prof. Ren’s direction.</p>
-  
-                      <p class="text-justify">Prof. Ren has presented talks at various institutions and
+
+                        <p class="text-justify">Prof. Ren has presented talks at various institutions and
                           international conferences. He often serves as a reviewer, associate editor, guest
                           editor, conference/program chair or program/steering committee member. He recently
                           found the International Symposium on Interactive Technology and Ageing Populations
-                          2016 (IxAP 2016) and the International Workshop on Human-Engaged Computing (<a href="http://forum.chec.ren/" target="_blank">IWHEC
-                          2017</a>), and was the general conference co-chairs of two conferences. He has
+                          2016 (IxAP 2016) and the International Workshop on Human-Engaged Computing (<a
+                            href="http://forum.chec.ren/" target="_blank">IWHEC
+                            2017</a>), and was the general conference co-chairs of two conferences. He has
                           organized several workshops and Special Interesting Groups at ACM CHI and ACM ISS
                           about interactive technologies for aging, engagement, computational aesthetics (ACM
                           CHI 2015, CHI 2016, CHI 2017, CHI 2018 and ISS 2018).</p>
@@ -287,12 +318,137 @@
 
                     <div class="tab-pane fade" id="pills-two-code-features" role="tabpanel"
                       aria-labelledby="pills-two-code-features-tab">
+                      <h1 class="mb-4 custom-font-C-title">任 向实</h1>
+                      <p class="text-justify custom-font-C-txt">任向实现任日本高知工科大学 (<a href="http://www.kochi-tech.ac.jp/"
+                          target="_blank">Kochi
+                          University of Technology</a>)
+                        信息学院终身教授，博士生导师，高知工科大学人机共协计算研究所 (<a href="http://xrenlab.com" target="_blank">Center
+                          for Human-Engaged Computing,
+                          CHEC</a>)创所所长，曾任国际交流中心委员；世界华人华侨人机交互协会创会会长 (<a href="http://icachi.org"
+                          target="_blank">ICACHI</a>)，终身名誉会长，中国科学技术协会首批海外
+                        “海智计划”专家，吉林省海外交流协会海外理事，教育部“春晖计划”专家和“长江学者奖励计划”海外评
+                        审专家；日本信息处理学会、电子信息通信学会、人机交互学会会员；ACM（国际计算机信息领域最大学会）高级会员，IEEE（国际电子信息通信领域最大学会）高级会员，
+                        在ACM CHI 2015 （人机交互领域顶级会议）入选Asian Human-Computer Interaction
+                        Heroes，2016年入选世界华人华侨协会人机交互领军人物。下一代人机交互 — 人机共协计算理论 (Human-Engaged Computing,
+                        HEC)的创立者。
+                      </p>
+                      <p class="text-justify custom-font-C-txt">任向实教授分别于 1991 年、1993 年及 1996 年在东京电机大学 (Tokyo Denki
+                        University)
+                        工学部获得电气通信工程学士学位、信息通信工学硕士学位及工学博士学位，并于 1996 — 1999 年期间留校担任助理教授；2000
+                        年至今先后担任日本高知工科大学信息系统工学系及该校研究生院信息系统专业助理教授、副教授、教授。曾经先后担任 IBM Almaden 研究中心 (IBM
+                        Almaden Research Center) 客座研究员，华盛顿大学 (University of Washington) 客座教授，多伦多大学
+                        (University of Toronto) 客座教授，吉林大学唐敖庆讲座教授。现在担任北京师范大学兼职教授。</p>
+                      <p class="text-justify custom-font-C-txt">任向实教授自 1991 年以来一直从事人机交互领域的基础和应用研究，2000
+                        年在高知工科大学创立人机交互技术研究室，其研究兴趣涵盖整个人机交互 (Human-Computer Interaction,
+                        HCI)领域，主要研究内容包括用户界面设计 (User Interface Design)、人体行为模型 (Human Performance
+                        Models)和基于笔式、眼式、触觉、手势的交互技术 (Pen/eye/touch/gesture-based
+                        Interaction)、游戏交互、老年人人机交互以及人机共协计算 (Human-Engaged
+                        Computing)。目前已经获得各种研究资助30项（其中25项作为项目负责人、教育奖2项、研究论文奖等12项，近年如ACM ISS 2016最佳论文奖ACM CHI
+                        2017最佳论文奖, IEEE SmartComp 2017业界 (Community)最佳论文奖等。历年来担任国内外学术会议的程序（或组织）主席（或委员）50
+                        余次，并担任多个国际学术期刊或国际会议的审稿人。任向实教授曾担任2012年8月在日本召开的第十届环太平洋地区人机交互国际会议APCHI 2012 (10th Asia
+                        Pacific Conference on Computer Human Interaction)大会程序委员会主席，人机交互领域顶会 ACM CHI 2013,
+                        CHI 2015, CHI 2017大会程序委员会副主席，组织了首届华人华侨人机交互国际论坛 (Chinese CHI
+                        2013)大会，担任大会主席及担任Chinese CHI 2014, Chinese CHI 2015, Chinese CHI 2016 Steering
+                        Committee，Chinese CHI 2017 名誉主席。此外，任向实教授创办了首届国际老年人人机交互 (IxAP
+                        2016)会议和首届人机共协计算国际研讨会并担任大会主席 (<a href="http://forum.chec.ren/" target="_blank">IWHEC
+                          2017</a>)。近年来，他也在人机交互领域顶级国际会议(ACM CHI 2015, CHI
+                        2016, CHI 2017, CHI 2018 and ISS 2018) 上组织有关老龄化, 用户沉浸(Engagement),
+                        计算美学等新研究方向的研讨会和特别兴趣小组 (Special Interesting Groups).</p>
+                      <!-- Read More - Collapse -->
+                      <div class="collapse" id="collapseDescriptionSection">
+                        <p class="text-justify custom-font-C-txt">
+                          任向实教授目前在海内外重要学术期刊及国际会议上发表研究论文300多篇，其中主要研究成果发表在人机交互领域的国际顶级或代表性期刊（如IEEE相关期刊，ACM
+                          TOCHI, IJHCS,
+                          BIT）、A+或A排名的国际会议。多年来，任向实教授培养博士14名，博士后5名，其学生在国内外大学和研究机构作为教员或博士后，积极从事人机交互或人机共协相关的研究。</p>
+                        <p class="text-justify custom-font-C-txt">2006年5月，任向实教授在美国硅谷拜会人机交互开创者Douglas
+                          Engelbart（鼠标，互联网架构，图形界面等关键技术奠基人），并从Engelbart的题词中受到启发，开始思考人类和技术未来的关系，并于近年提出了“Human-Engaged
+                          Computing（人机共协计算）”的概念，发表在IEEE Computer (August 2016)，受到国内外同行的关注。在世界人机交互顶会ACM CHI
+                          2017上做为Panelist之一，任向实教授和领域内著名学者University of Maryland的Ben Shneiderman教授，MIT的 Pattie
+                          Maes教授就下一世代的人机交互发展进行讨论，其观点倍受关注并引起广泛讨论。任向实教授预测人机交互、人机共协计算 (Human-Engaged
+                          Computing)是继人工智能浪潮后的一大长期研究、教育和投资热点。</p>
+                        <p class="text-justify custom-font-C-txt">
+                          任向实教授自1987年留学日本以来，积极参加社会公益活动：1992—1993年期间任东京地区中国留学生学友会生活部部长，1993—1994年期间任副会长；1994—1995年期间任全日本中国人学友会理事；1991—1993年期间任留学生大学入学说明会实行委员会委员；1994年任全日本留学生研讨会委员。作为全日本中国人博士协会发起人之一，1998-2017年期间担任博士协会理事，2001-2017年期间担任博士协会副会长。
+                        </p>
+                        <p class="text-justify custom-font-C-txt">
+                          担任日本教职以来，任向实教授基于常年对海外研究教育交流的国际经验和理念的思考，对所在大学管理积极建言，并推进其国际化的发展。经其个人联系，所在大学向美国加州大学
+                          Berkeley
+                          分校派遣了30名教职员进行大学管理和国际化经验的学习。此外，通过任向实教授的努力推动，所在大学分别和北京理工大学，昆明理工大学，吉林大学，香港理工大学，北京科技大学，吉林大学珠海学院，印度理工学院签署了校际协议，包括联合培养双博士、双硕士、本科生短期访问等项目。多年来，任向实教授领导的研究所业已接待了来自多个国家的近百名访问学者和短期访问学生。
+                          担任日本教职以来，任向实教授基于常年对海外研究教育交流的国际经验和理念的思考，对所在大学管理积极建言，并推进其国际化的发展。经其个人联系，所在大学向美国加州大学
+                          Berkeley
+                          分校派遣了30名教职员进行大学管理和国际化经验的学习。此外，通过任向实教授的努力推动，所在大学分别和北京理工大学，昆明理工大学，吉林大学，香港理工大学，北京科技大学，吉林大学珠海学院，印度理工学院签署了校际协议，包括联合培养双博士、双硕士、本科生短期访问等项目。多年来，任向实教授领导的研究所业已接待了来自多个国家的近百名访问学者和短期访问学生。
+                        </p>
+                        <p class="text-justify custom-font-C-txt">
+                          心含促进世界和亚洲人机交互事业发展之情怀，任向实教授在2012年和来自世界各国家和地区的27名海外华人华侨学者们于美国奥斯丁ACM
+                          CHI 2012期间创建了世界华人华侨人机交互协会 (International Chinese Association of Computer Human
+                          Interaction，icachi.org)。协会大多数会员在海外取得博士或硕士学位，且在国外各大学或企业工作多年，为海外建业创业的科技和专业精英，部分会员已在中国大学任职或成功围绕人机交互技术创业。作为一个有效的平台，协会多年来在交流学习、资源及人才方面为国内有关部门和企业提供了高质量的支持和服务，受到工业界和学术界的广泛支持，在国际上已成为极有影响力和口碑的华人学术团体。其年会Chinese
+                          CHI已经成为华人华侨人机交互领域的世界级论坛。在任向实教授促成法国巴黎召开的首届华人华侨人机交互国际论坛(Chinese CHI2013)大会后，Chinese
+                          CHI 2014, Chinese CHI 2015, Chinese CHI 2016, Chinese CHI 2017, Chinese CHI
+                          2018分别在加拿大多伦多，韩国首尔、美国硅谷的圣何塞、中国广州和加拿大在蒙特利尔成功举办，这些学术活动有效推动了中国人机交互领域的教育和研究面向世界的进一步发展。</p>
+                        <p class="text-justify custom-font-C-txt">
+                          任向实教授学术之余，更关注人类社会问题，并为此开展了诸如针对老年人的人机交互研究等。而通过思考人类和技术的关系，其提出的人机共协计算思想将助力于提升人类个体与集体智慧。任向实教授志于把多年积累的人才培养、大学教育与管理和国际化经验充分发挥回馈社会。
+                        </p>
+                      </div>
+                      <!-- End Read More - Collapse -->
+
+                      <!-- Link -->
+                      <a class="link link-collapse small font-size-1 font-weight-bold pt-1" data-toggle="collapse"
+                        href="#collapseDescriptionSection" role="button" aria-expanded="false"
+                        aria-controls="collapseDescriptionSection">
+                        <span class="link-collapse-default">Read more</span>
+                        <span class="link-collapse-active">Read less</span>
+                        <span class="link-icon ml-1">+</span>
+                      </a>
+                      <!-- End Link -->
 
                     </div>
 
                     <div class="tab-pane fade" id="pills-three-code-features" role="tabpanel"
                       aria-labelledby="pills-three-code-features-tab">
-                      <!-- Device Mockup -->
+                      <h1 class="mb-4 custom-font-C-title">任 向実</h1>
+                      <p class="text-justify custom-font-C-txt">任向実教授は、現在、<a href="http://www.kochi-tech.ac.jp/" target="_blank">高知工科大学</a>情報学群教授、同大学Human-Engaged
+                        Computing研究センター(<a href="http://xrenlab.com" target="_blank">CHEC</a>)の創設者でありセンター長。
+                        International Chinese Association of Computer
+                        Human Interaction
+                        (<a href="http://icachi.org" target="_blank">ICACHI</a>)の創立者、初代会長および終身名誉会長。ヒューマン・コンピュータ・インタラクション（HCI）分野の最高峰の国際学会ACM
+                        CHI
+                        2015において、アジアのヒューマン・コンピュータ・インタラクション・ヒーローズの一人に選ばれる。2001年から2010年まで
+                        IBMアルマデン研究センターの客員研究員を務める。2006年 ワシントン大学の客員教授、2007年吉林大学の客員教授，2010年IBM研究所（アルマデン）
+                        の客員研究員およびトロント大学 の客員教授を歴任。また現在は、吉林大学および北京師範大学の非常勤教授、 ACMとIEEEの上級メンバーである。
+                    </p>
+                    <p class="text-justify custom-font-C-txt">任教授は、ヒューマン・コンピュータ・インタラクション（HCI）分野の基礎的研究を25年以上に渡り行ってきた。その研究対象は、ヒューマン・パフォーマンス・モデル、ペンベース・インタラクション、マルチタッチ・インタラクション、アイベース・インタラクション、触覚インタラクション、ジェスチャ・インプット、ゲーム・インタラクション、高齢者および視覚障がいを持つユーザのためのユーザ・インタフェースなどに渡っている。任教授と彼の共同研究者らはユーザ研究、ヒューマン・パフォーマンス・モデリング、新たなアルゴリズムの開発などの手法を組み入れ、HCIとHuman-Engaged
+                        Computing (HEC)理論をアプリケーションへ体系的に適用し、情報技術に基づく独自の研究フレームワークを確立した。</p>
+                    <p class="text-justify custom-font-C-txt">近年、ヒトと技術(Computer,
+                        AI、ICT技術)の未来の理想関係像についての新しいコンセプトであるHuman-Engaged Computing (HEC) を提唱し、IEEE Computer
+                        Societyのフラッグシップ出版物である Computer 誌に発表した（“Rethinking the Relationship between Humans
+                        and Computers. Computer, 49(8), 104-108,
+                        2016）。これは、ヒトの本来の能力と技術力の相乗作用（シナジー）を利用して、人間の可能性を最大限に発揮し、現実世界の複雑な問題を解決しようとする考え方である。3000名が参加したHCI分野最高峰の国際会議CHI2017で、メリーランド大学のShneiderman
+                        教授、マサチューセッツ工科大学のMaes教授とともに、パネルディスカッションに招聘され、次世代のヒューマン・コンピュータインタラクション
+                        (HCI)の在り方に関するディスカッションを行った。その際にHECのコンセプトも明示した。また、国内外での招待講演でも、HECのコンセプトを提唱している。</p>
+                    
+                      <!-- Read More - Collapse -->
+                      <div class="collapse" id="collapseDescriptionSection">
+                        <p class="text-justify custom-font-C-txt">これまで様々な研究機関から30の研究助成金を受け、著作権を有する発表論文は300以上に及ぶ。様々な研究業績に対し26の賞を受賞しており、例えば、1999年東京電機大学で、2005年高知工科大学で、優秀教員賞を2回受賞している。最近では、ACM
+                          ISS 2016 最優秀論文賞、ACM CHI 2017 最優秀論文賞、IEEE Smart Comp 2017 最優秀コミュニティ論文賞、Chinese CHI
+                          2017最優秀ポスター賞を受賞。ここ数年の 国際学会活動では、ACM CHI 2017, CHI 2015, CHI 2013 および ACM DIS
+                          2016の副プログラム委員長を務める。また、ヒューマンコンピュータインタラクションについての国際シンポジウムChinese CHI
+                          2013、高齢者のためのインタラクティブ技術に関する国際シンポジウム2016（IxAP
+                          2016）およびヒューマン・エンゲージド・コンピューティング国際ワークショップ（<a href="http://forum.chec.ren/" target="_blank">IWHEC
+                              2017</a>）を創設し、それぞれの大会長を務めている。また、トップクラスの国際会議 (ACM CHI 2015, CHI 2016, CHI 2017, CHI 2018
+                          and ISS 2018)では、分野の研究の方向性を示す高齢者のためのインタラクティブ技術、エンゲージメント,
+                          計算美学に関するワークショップやスペシャルインタレストグループ（SIG） を主催している。</p>
+                      <p class="text-justify custom-font-C-txt">任教授はこれまで、様々な国からのポスドク研究員５名を指導し、博士課程の大学院生１４名を教育し、全員が博士号を取得している。これらの研究員および学生は、現在、国内外の大学で教員またはポスドクを務め、HCIまたはHEC関連の研究に従事している。</p>
+                      </div>
+                      <!-- End Read More - Collapse -->
+
+                      <!-- Link -->
+                      <a class="link link-collapse small font-size-1 font-weight-bold pt-1" data-toggle="collapse"
+                        href="#collapseDescriptionSection" role="button" aria-expanded="false"
+                        aria-controls="collapseDescriptionSection">
+                        <span class="link-collapse-default">Read more</span>
+                        <span class="link-collapse-active">Read less</span>
+                        <span class="link-icon ml-1">+</span>
+                      </a>
+                      <!-- End Link -->
                     </div>
                   </div>
                   <!-- End Tab Content -->
@@ -311,7 +467,9 @@
                         <div class="step-content-wrapper" data-hs-step-form-next-options='{
                           "targetSelector": "#basicSelectStepOne"
                         }'>
-                          <span class="step-icon step-icon-soft-primary">1</span>
+                          <!-- <span class="step-icon step-icon-soft-primary">1</span> -->
+                          <img class="step-icon step-icon-soft-primary" src="./static/images/icon/pen.svg" alt=""
+                            style="background-color:white;color:white;border-radius: 0;">
                           <div class="step-content">
                             <span class="step-title">Pen-based Interaction</span>
                             <br>
@@ -324,7 +482,9 @@
                         <div class="step-content-wrapper" data-hs-step-form-next-options='{
                           "targetSelector": "#basicSelectStepTwo"
                         }'>
-                          <span class="step-icon step-icon-soft-primary">2</span>
+                          <!-- <span class="step-icon step-icon-soft-primary">2</span> -->
+                          <img class="step-icon step-icon-soft-primary" src="./static/images/icon/hci.svg" alt=""
+                            style="background-color:white;color:white;border-radius: 0;">
                           <div class="step-content">
                             <span class="step-title">HCI in General</span>
                             <br>
@@ -337,7 +497,9 @@
                         <div class="step-content-wrapper" data-hs-step-form-next-options='{
                           "targetSelector": "#basicSelectStepThree"
                         }'>
-                          <span class="step-icon step-icon-soft-primary">3</span>
+                          <!-- <span class="step-icon step-icon-soft-primary">3</span> -->
+                          <img class="step-icon step-icon-soft-primary" src="./static/images/icon/hec.svg" alt=""
+                            style="background-color:white;color:white;border-radius: 0;">
                           <div class="step-content">
                             <span class="step-title">Human-Engaged Computing</span>
                             <br>
@@ -556,31 +718,14 @@
                     <!-- End Title -->
                     <div class="row justify-content-lg-center">
 
-                      <div class="col-md-4 mb-7 mb-lg-0">
+                      <div class="col-md-6 mb-7 mb-lg-0">
                         <div data-aos="fade-up" data-aos-delay="100">
                           <!-- Stats -->
-                          <div class="text-center px-md-3 px-lg-7">
-                            <figure class="mb-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71"
-                                height="64">
-                                <path fill="#FFC107" d="M36.8,14.6L42,25.3c0,0.2,0.2,0.2,0.3,0.3L54,27.2c0.3,0,0.5,0.5,0.3,0.8l-8.5,8.2c-0.2,0.2-0.2,0.3-0.2,0.5
-            l2,11.7c0,0.3-0.3,0.7-0.7,0.5l-10.5-5.6c-0.2,0-0.3,0-0.5,0l-10.5,5.6c-0.3,0.2-0.8-0.2-0.7-0.5l2-11.7c0-0.2,0-0.3-0.2-0.5
-            L18,28.1c-0.3-0.3-0.2-0.8,0.3-0.8L30,25.6c0.2,0,0.3-0.2,0.3-0.3l5.3-10.7C36.1,14.2,36.6,14.2,36.8,14.6z" />
-                                <path opacity=".25" fill="#FFC107" d="M56,5.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
-            c0,0.2-0.2,0.2-0.2,0.2L56,13.6h-0.2L53,15.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2l-2.3-2.3V9.2l3.1-0.5c0,0,0,0,0.2,0l1.5-2.8
-            C55.8,5.7,55.8,5.7,56,5.9z" />
-                                <path opacity=".25" fill="#FFC107" d="M12.3,0.3l1.3,2.8c0,0,0,0,0.2,0l3,0.5c0.2,0,0.2,0.2,0,0.2l-2.1,2.1c0,0,0,0,0,0.2l0.5,3
-            c0,0.2-0.2,0.2-0.2,0.2l-2.6-1.5c0,0,0,0-0.2,0L9.5,9.2c-0.2,0-0.2,0-0.2-0.2l0.5-3c0,0,0,0,0-0.2L7.5,3.7V3.6l3-0.5c0,0,0,0,0.2,0
-            l1.3-2.8C12.1,0.3,12.3,0.3,12.3,0.3z" />
-                                <path opacity=".25" fill="#FFC107" d="M13.9,49.9l1.5,2.8c0,0,0,0,0.2,0l3.1,0.5c0.2,0,0.2,0.2,0,0.2l-2.3,2.3c0,0,0,0,0,0.2l0.5,3.1
-            c0,0.2-0.2,0.2-0.2,0.2l-2.8-1.5h-0.2L11,59.1c-0.2,0-0.2,0-0.2-0.2l0.5-3.1v-0.2L9,53.4v-0.2l3.1-0.5c0,0,0,0,0.2,0l1.3-2.8
-            C13.8,49.8,13.9,49.8,13.9,49.9z" />
-                                <path opacity=".25" fill="#FFC107" d="M60.8,53.5l1.6,3.1c0,0,0,0,0.2,0l3.5,0.5c0.2,0,0.2,0.2,0,0.3l-2.5,2.5c0,0,0,0,0,0.2l0.7,3.5
-            c0,0.2-0.2,0.2-0.2,0.2l-3.1-1.6h-0.2l-3.1,1.6c-0.2,0-0.2,0-0.2-0.2l0.7-3.5v-0.2l-2.5-2.5c-0.2-0.2,0-0.2,0-0.3l3.5-0.5h0.2
-            l1.6-3.1C60.4,53.4,60.6,53.4,60.8,53.5z" />
-                              </svg>
-                            </figure>
-                            <h3>Human-Computer Interaction (Undergraduted)</h3>
+                          <div class="text-center px-md-3 px-lg-7 row">
+                            <div class="col-md-5"><img src="./static/images/icon/hciu.svg" alt=""></div>
+                            <div class="col-md-7">
+                              <p>Description</p></div>
+                            
                             <!-- <p class="mb-0"><span class="text-dark font-weight-bold">4.83 out of 5 starts</span> from 53
                               reviews</p> -->
                           </div>
@@ -588,49 +733,13 @@
                         </div>
                       </div>
 
-                      <div class="col-md-4 mb-7 mb-lg-0">
+                      <div class="col-md-6 mb-7 mb-lg-0">
                         <div data-aos="fade-up">
                           <!-- Stats -->
-                          <div class="text-center column-divider-md column-divider-20deg px-md-3 px-lg-7">
-                            <figure class="mb-3">
-                              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 71.7 64" width="71"
-                                height="64">
-                                <defs>
-                                  <circle id="SVGID_1_" cx="50.9" cy="43.1" r="18.9" />
-                                </defs>
-                                <clipPath id="SVGID_2_">
-                                  <use xlink:href="#SVGID_1_" />
-                                </clipPath>
-                                <g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_2_);">
-                                  <image width="100" height="100" xlink:href="./assets/img/100x100/img10.jpg"
-                                    transform="matrix(0.36 0 0 0.36 32.8571 25.1429)"></image>
-                                </g>
-                                <use xlink:href="#SVGID_1_" fill="none" stroke="#FFFFFF" stroke-width="4" />
-                                <defs>
-                                  <circle id="SVGID_3_" cx="34.6" cy="20.9" r="18.9" />
-                                </defs>
-                                <clipPath id="SVGID_4_">
-                                  <use xlink:href="#SVGID_3_" />
-                                </clipPath>
-                                <g style="clip-path:url(#SVGID_4_);">
-                                  <image width="100" height="100" xlink:href="./assets/img/100x100/img3.jpg"
-                                    transform="matrix(0.36 0 0 0.36 16.5714 2.8571)"></image>
-                                </g>
-                                <use xlink:href="#SVGID_3_" fill="none" stroke="#FFFFFF" stroke-width="4" />
-                                <defs>
-                                  <circle id="SVGID_5_" cx="20.9" cy="43.1" r="18.9" />
-                                </defs>
-                                <clipPath id="SVGID_6_">
-                                  <use xlink:href="#SVGID_5_" />
-                                </clipPath>
-                                <g style="clip-path:url(#SVGID_6_);">
-                                  <image width="100" height="100" xlink:href="./assets/img/100x100/img2.jpg"
-                                    transform="matrix(0.3771 0 0 0.3771 2 24.2857)"></image>
-                                </g>
-                                <use xlink:href="#SVGID_5_" fill="none" stroke="#FFFFFF" stroke-width="4" />
-                              </svg>
-                            </figure>
-                            <h3>Human-Computer Interaction (Postgraduted)</h3>
+                          <div class="text-center column-divider-md column-divider-20deg px-md-3 px-lg-7 row">
+                            <div class="col-md-5"><img src="./static/images/icon/hcip.svg" alt=""></div>
+                            <div class="col-md-7">
+                              <p>Description</p></div>
                             <!-- <p class=" mb-0">Over <span class="text-dark font-weight-bold">500</span> support questions
                               have been closed</p> -->
                           </div>
@@ -639,10 +748,10 @@
                         </div>
                       </div>
 
-                      
-                      </div>
+
                     </div>
                   </div>
+
                   <!-- End Stats Section -->
                   <!-- Team Section -->
                   <div class="container space-1 space-top-xl-1 space-bottom-lg-1">
@@ -658,11 +767,13 @@
                         <div class="card h-100 transition-3d-hover">
                           <div class="card-body">
                             <div class="avatar avatar-lg avatar-circle mb-4">
-                              <img class="avatar-img" src="./static/images/avatar/phd/Liyang.png" alt="Image Description">
+                              <img class="avatar-img" src="./static/images/avatar/phd/Liyang.png"
+                                alt="Image Description">
                             </div>
 
                             <h4 class="text-lh-sm">Yang Li</h4>
-                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of Technology</span>
+                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of
+                              Technology</span>
                             <p class="font-size-1">...</p>
                           </div>
 
@@ -686,11 +797,13 @@
                         <div class="card h-100 transition-3d-hover">
                           <div class="card-body">
                             <div class="avatar avatar-lg avatar-circle mb-4">
-                              <img class="avatar-img" src="./static/images/avatar/phd/Jiangxinhui.png" alt="Image Description">
+                              <img class="avatar-img" src="./static/images/avatar/phd/Jiangxinhui.png"
+                                alt="Image Description">
                             </div>
 
                             <h4 class="text-lh-sm">Xinhui Jiang</h4>
-                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of Technology</span>
+                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of
+                              Technology</span>
                             <p class="font-size-1">...</p>
                           </div>
 
@@ -714,12 +827,14 @@
                         <div class="card h-100 transition-3d-hover">
                           <div class="card-body">
                             <div class="avatar avatar-lg avatar-circle mb-4">
-                              <img class="avatar-img" src="./static/images/avatar/phd/Kavous.png" alt="Image Description">
+                              <img class="avatar-img" src="./static/images/avatar/phd/Kavous.png"
+                                alt="Image Description">
                             </div>
 
-                            
+
                             <h4 class="text-lh-sm">Kavous Salehzadeh Niksirat</h4>
-                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of Technology</span>
+                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of
+                              Technology</span>
                             <p class="font-size-1">...</p>
                           </div>
 
@@ -743,12 +858,14 @@
                         <div class="card h-100 transition-3d-hover">
                           <div class="card-body">
                             <div class="avatar avatar-lg avatar-circle mb-4">
-                              <img class="avatar-img" src="./static/images/avatar/phd/Tuhuawei.png" alt="Image Description">
+                              <img class="avatar-img" src="./static/images/avatar/phd/Tuhuawei.png"
+                                alt="Image Description">
                             </div>
 
-                            
+
                             <h4 class="text-lh-sm">Huawei Tu</h4>
-                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of Technology</span>
+                            <span class="d-block small font-weight-bold text-cap mb-1">Kochi University of
+                              Technology</span>
                             <p class="font-size-1">...</p>
                           </div>
 
@@ -770,61 +887,66 @@
 
                   </div>
                   <!-- End Team Section -->
-                      <!-- Articles Section -->
-    <div class="container space-1 space-top-xl-1 space-bottom-lg-1">
+                  <!-- Positions Section -->
+                  <div class="container space-1 space-top-xl-1 space-bottom-lg-1">
                     <!-- Title -->
                     <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
                       <h4 class="text-body h6 text-cap">Open Positions</h4>
                     </div>
                     <!-- End Title -->
-      <div class="row mx-n2 mx-lg-n3">
-        <div class="col-sm-6 col-lg-6 px-2 px-lg-3 mb-3 mb-lg-0" data-aos="fade-up">
-          <!-- Card -->
-          <a class="card bg-primary text-left h-100 transition-3d-hover" href="https://www.kochi-tech.ac.jp/english/admission/ssp_aft19oct/ssp_application_guideline.html">
-            <div class="card-body">
-              <div class="mb-5">
-                <h3 class="text-white">Special Scholarship Program (SSP)</h3>
-                <p class="text-white">SSP Application Guidelines for Prospective Students</p>
-              </div>
-              <img class="img-fluid w-100" src="./static/images/position/ssp.jpg" alt="Image Description">
-            </div>
-            <div class="card-footer border-0 bg-transparent pt-0">
-              <span class="font-size-1 text-white font-weight-bold">Learn more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
+                    <div class="row mx-n2 mx-lg-n3">
+                      <div class="col-sm-6 col-lg-6 px-2 px-lg-3 mb-3 mb-lg-0" data-aos="fade-up">
+                        <!-- Card -->
+                        <a class="card bg-primary text-left h-100 transition-3d-hover"
+                          href="https://www.kochi-tech.ac.jp/english/admission/ssp_aft19oct/ssp_application_guideline.html" target="_blank">
+                          <div class="card-body">
+                            <div class="mb-5">
+                              <h3 class="text-white">Special Scholarship Program (SSP)</h3>
+                              <p class="text-white">SSP Application Guidelines for Prospective Students</p>
+                            </div>
+                            <img class="img-fluid w-100" src="./static/images/position/ssp.jpg" alt="Image Description">
+                          </div>
+                          <div class="card-footer border-0 bg-transparent pt-0">
+                            <span class="font-size-1 text-white font-weight-bold">Learn more <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></span>
+                          </div>
+                        </a>
+                        <!-- End Card -->
+                      </div>
 
-        <div class="col-sm-6 col-lg-6 px-2 px-lg-3 mb-3 mb-lg-0" data-aos="fade-up" data-aos-delay="150">
-          <!-- Card -->
-          <a class="card bg-dark text-left h-100 transition-3d-hover" href="http://xrenlab.com/static/documents/CSC-KUT-CHEC.pdf?v=f754519697b300f611ff45c9a69dafa5">
-            <div class="card-body">
-              <div class="mb-5">
-                <h3 class="text-white">CSC-KUT Scholarship Program</h3>
-                <p class="text-white">CSC-KUT</p>
-              </div>
-              <img class="img-fluid w-100" src="./static/images/position/csc.jpg" alt="Image Description">
-            </div>
-            <div class="card-footer border-0 bg-transparent pt-0">
-              <span class="font-size-1 text-white font-weight-bold">Learn more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
+                      <div class="col-sm-6 col-lg-6 px-2 px-lg-3 mb-3 mb-lg-0" data-aos="fade-up" data-aos-delay="150">
+                        <!-- Card -->
+                        <a class="card bg-dark text-left h-100 transition-3d-hover"
+                          href="http://xrenlab.com/static/documents/CSC-KUT-CHEC.pdf?v=f754519697b300f611ff45c9a69dafa5" target="_blank">
+                          <div class="card-body">
+                            <div class="mb-5">
+                              <h3 class="text-white">CSC-KUT Scholarship Program</h3>
+                              <p class="text-white">CSC-KUT</p>
+                            </div>
+                            <img class="img-fluid w-100" src="./static/images/position/csc.jpg" alt="Image Description">
+                          </div>
+                          <div class="card-footer border-0 bg-transparent pt-0">
+                            <span class="font-size-1 text-white font-weight-bold">Learn more <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></span>
+                          </div>
+                        </a>
+                        <!-- End Card -->
+                      </div>
 
-      </div>
-    </div>
-    <!-- End Articles Section -->
+                    </div>
+                  </div>
+                  <!-- End Positions Section -->
                 </div>
               </div>
-              <!-- End Tab Content -->
             </div>
-            <!-- End Body -->
+            <!-- End Tab Content -->
           </div>
-          <!-- End Card -->
+          <!-- End Body -->
         </div>
-
+        <!-- End Card -->
       </div>
+
+    </div>
     </div>
     <!-- End Features Section -->
 
@@ -832,11 +954,18 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark">
-    <div class="container">
+  <!-- ========== FOOTER ========== -->
+  <footer class="container text-center space-1">
+    <hr>
+    <!-- Logo -->
+    <a class="d-inline-flex align-items-center mb-2" href="http://xrenlab.com" aria-label="Front" target="_blank">
+      <img class="brand" src="./static/images/logo/CHEC.svg" alt="Logo">
+    </a>
+    <!-- End Logo -->
 
-    </div>
+    <p class="small text-muted mb-0">2021 © Center for Human-Engaged Computing. All rights reserved.</p>
   </footer>
+  <!-- ========== END FOOTER ========== -->
   <!-- ========== END FOOTER ========== -->
 
   <!-- Go to Top -->
@@ -857,6 +986,10 @@
     <i class="fas fa-angle-up"></i>
   </a>
   <!-- End Go to Top -->
+
+  <script src="./static/js/particles.js"></script>
+  <script src="./static/js/app.js"></script>
+  
 
   <!-- JS Global Compulsory  -->
   <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
